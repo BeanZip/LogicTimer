@@ -19,3 +19,6 @@ Allows You to set a timer for a certain amount of seconds, minutes or Hours.
 
 ### TimeZone Support
 Supports all TimeZones In The Menu Selection Bar.
+## Support
+If You Need To Contact for Issues please dm me on discord #ichi2472,
+I will gladly take suggestions and improvements Despite this not being used for Practicality.
