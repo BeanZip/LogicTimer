@@ -82,10 +82,6 @@ public class Basic {
                 FlatLightLaf.setup();
                 SwingUtilities.updateComponentTreeUI(frame);
             });
-            dark.addActionListener(e->{
-              FlatLightLaf.setup();
-              SwingUtilities.updateComponentTreeUI(frame);
-            });
             GitL.addActionListener(e ->{
                 FlatGitHubIJTheme.setup();
                 SwingUtilities.updateComponentTreeUI(frame);
