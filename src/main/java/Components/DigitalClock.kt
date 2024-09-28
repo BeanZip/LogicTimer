@@ -21,4 +21,10 @@ open class DigitalClock : Basic.menu() {
             }
         }
     }
+    fun interact(){
+        Digital.addActionListener(){
+            setup()
+            SwingUtilities.updateComponentTreeUI(frame)
+        }
+    }
 }

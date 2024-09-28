@@ -38,12 +38,15 @@ public class Basic {
         JMenuItem git = new JMenuItem("GitHub");
         JMenuItem tut = new JMenuItem("How To Use");
 
+        JMenu Git = new JMenu("GitHub Colors");
         JMenuItem GitL = new JMenuItem("GitHub Light");
         JMenuItem GitD = new JMenuItem("GitHub Dark");
 
+        JMenu bas = new JMenu("Basic Themes");
         JMenuItem light = new JMenuItem("Light");
         JMenuItem dark = new JMenuItem("Dark");
 
+        JMenu gruv = new JMenu("Gruvbox Themes");
         JMenuItem GruvboxLight = new JMenuItem("GruvBox Soft");
         JMenuItem GruvBoxNormal = new JMenuItem("Gruvbox Medium");
         JMenuItem GruvBoxHard = new JMenuItem("Gruvbox Hard");
@@ -108,9 +111,16 @@ public class Basic {
             op.add(View);
             View.add(Analog);
             View.add(Digital);
-            Theme.add(GruvBoxHard);
-            Theme.add(GruvboxLight);
-            Theme.add(GruvBoxNormal);
+            Theme.add(gruv);
+            gruv.add(GruvBoxHard);
+            gruv.add(GruvBoxNormal);
+            gruv.add(GruvboxLight);
+            Theme.add(bas);
+            bas.add(light);
+            bas.add(dark);
+            Theme.add(Git);
+            Git.add(GitL);
+            Git.add(GitD);
         }
     }
 }
