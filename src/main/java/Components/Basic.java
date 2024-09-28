@@ -12,10 +12,8 @@ import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatGitHubIJTheme;
 public class Basic {
     public static class frame extends JFrame implements BasicFunctions.window {
         static JFrame frame = new JFrame("Logic Timer");
-        int screenheight = 400;
-        int screenwidth = 300;
         @Override
-        public void InitWindow() {
+        public void InitWindow(int screenwidth,int screenheight) {
          frame.setSize(screenwidth,screenheight);
         }
 

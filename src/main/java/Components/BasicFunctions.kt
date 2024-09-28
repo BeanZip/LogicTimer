@@ -2,7 +2,7 @@ package Components
 
 interface BasicFunctions {
     interface window{
-        fun InitWindow()
+        fun InitWindow(screenwidth : Int,screenheight: Int)
         fun SetVisible()
     }
     fun interactable()
