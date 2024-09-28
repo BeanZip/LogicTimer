@@ -1,17 +1,15 @@
 package org.example;
 
+import Components.AnalogClock;
 import Components.BasicFunctions;
 import Components.DigitalClock;
 import com.formdev.flatlaf.FlatLightLaf;
 
-class Main extends DigitalClock{
+class Main{
  public static void main(String[] args){
   FlatLightLaf.setup();
-  DigitalClock digitalClock = new DigitalClock();
-  digitalClock.InitWindow(500,300);
-  digitalClock.interactable();
-  digitalClock.frameaddition();
-  digitalClock.setup();
-  digitalClock.SetVisible();
+  ClockType clockType = new ClockType();
+  ClockType.ClockTypeA Clock= new ClockType.ClockTypeA();
+  Clock.Startuo();
  }
 }
