@@ -13,7 +13,6 @@ class Main{
   ClockType clockType = new ClockType();
   ClockType.ClockTypeA Clock= new ClockType.ClockTypeA();
   AnalogClock analogClock = new AnalogClock();
-  Status status = new Status();
   try {
    analogClock.InitWindow(400, 400);
    analogClock.frameaddition();
