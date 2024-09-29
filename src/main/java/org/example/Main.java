@@ -1,17 +1,25 @@
 package org.example;
 
 import Components.AnalogClock;
-import Components.BasicFunctions;
-import Components.DigitalClock;
 import com.formdev.flatlaf.FlatLightLaf;
-
-import javax.swing.*;
+import Components.Status;
 
 class Main{
- public static void main(String[] args){
+    private static String[] args;
+
+ public static String[] getArgs() {
+  return args;
+ }
+
+ public static void setArgs(String[] args) {
+  Main.args = args;
+ }
+
+ public static void main(String[] args) {
+  Main.args = args;
   FlatLightLaf.setup();
   ClockType clockType = new ClockType();
-  ClockType.ClockTypeA Clock= new ClockType.ClockTypeA();
+  ClockType.ClockTypeA Clock = new ClockType.ClockTypeA();
   AnalogClock analogClock = new AnalogClock();
   try {
    analogClock.InitWindow(400, 400);
@@ -20,8 +28,9 @@ class Main{
    analogClock.interactable2();
    analogClock.setup();
    analogClock.setVisible(true);
-  } catch(IllegalArgumentException e){
-     Status.check(e);
+  } catch (IllegalArgumentException e) {
+   Status.check(e);
+
+  }
  }
-}
 }
