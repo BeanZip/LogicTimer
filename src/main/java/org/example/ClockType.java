@@ -8,15 +8,15 @@ public class ClockType{
     static public class ClockTypeA extends Basic.menu{
      DigitalClock digitalClock = new DigitalClock();
      AnalogClock analogClock = new AnalogClock();
-     public void Startuo(){
-         InitWindow(400,400);
+     public void Startup(int screenwidth,int screenheight,boolean Displaying){
+         InitWindow(screenwidth,screenheight);
          frameaddition();
          interactable();
          analogClock.setup();
          analogClock.interactable2();
          digitalClock.setup();
          digitalClock.interactable();
-         setVisible(true);
+         setVisible(Displaying);
      }
     }
 }
