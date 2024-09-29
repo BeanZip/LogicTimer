@@ -9,7 +9,7 @@ import kotlin.math.cos
 import kotlin.math.sin
 
 // Analog class extending a custom menu class and implementing the clock interface
-open class Analog : Basic.menu(), Clock {  // Assuming Clock is an interface and Basic.menu() is defined elsewhere
+open class Analog : Basic.menu(), clock {  // Assuming Clock is an interface and Basic.menu() is defined elsewhere
     private val clockRadius = 100
     private val clockCenterX = clockRadius + 10
     private val clockCenterY = clockRadius + 10  // Changed to maintain symmetry
@@ -53,8 +53,8 @@ open class Analog : Basic.menu(), Clock {  // Assuming Clock is an interface and
     }
 
     // Corrected method to `paintComponent` for custom painting
-    override fun paintComponent(g: Graphics?) {
-        super.paintComponent(g)
+    fun paintComponent(g: Graphics?) {
+        super.paintComponents(g)
         val g2 = g as Graphics2D
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
         drawClockFace(g2)
